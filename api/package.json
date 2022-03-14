@@ -1,0 +1,19 @@
+{
+  "name": "chess-game-api",
+  "version": "1.0.0",
+  "description": "Chess game API",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.3",
+    "socket.io": "^4.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stein Bergervoet",
+  "license": "MIT"
+}
