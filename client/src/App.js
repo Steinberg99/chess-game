@@ -1,11 +1,18 @@
-import logo from "./logo.svg";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ChessGame from "./components/ChessGame";
+import { socket, SocketContext } from "./contexts/socket";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <ChessGame />
+      <BrowserRouter>
+        <SocketContext.Provider value={socket}>
+          <Routes>
+            <Route path="/game/:gameID" element={<ChessGame />} />
+          </Routes>
+        </SocketContext.Provider>
+      </BrowserRouter>
     </div>
   );
 }

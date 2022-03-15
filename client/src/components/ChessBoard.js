@@ -6,9 +6,9 @@ const yAxis = ["8", "7", "6", "5", "4", "3", "2", "1"];
 
 function ChessBoard({ piecePositions }) {
   let tiles = [];
-  for (let i = 0; i < xAxis.length; i++) {
-    for (let j = 0; j < yAxis.length; j++) {
-      let coordinates = xAxis[i] + yAxis[j];
+  for (let i = 0; i < yAxis.length; i++) {
+    for (let j = 0; j < xAxis.length; j++) {
+      let coordinates = xAxis[j] + yAxis[i];
       tiles.push(
         <Tile
           key={coordinates}

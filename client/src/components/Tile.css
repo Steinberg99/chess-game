@@ -1,4 +1,8 @@
 .tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 100px;
   height: 100px;
 }
@@ -9,4 +13,12 @@
 
 .dark {
   background-color: #925e78;
+}
+
+.piece {
+  background: none;
+  background-size: 100%;
+
+  width: 75px;
+  height: 75px;
 }
