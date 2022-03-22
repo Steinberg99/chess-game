@@ -3,8 +3,8 @@
   justify-content: center;
   align-items: center;
 
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
 }
 
 .light {
@@ -21,4 +21,12 @@
 
   width: 75px;
   height: 75px;
+}
+
+.piece:hover {
+  cursor: grab;
+}
+
+.piece:active {
+  cursor: grabbing;
 }
